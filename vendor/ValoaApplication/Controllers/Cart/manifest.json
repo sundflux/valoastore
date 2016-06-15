@@ -1,0 +1,14 @@
+{
+    "application": "ValoaStore Shopping Cart",
+    "version": "1.0.0",
+    "author": "sundstrom.io",
+    "email": "ta@sundstrom.io",
+    "www": "http://www.sundstrom.io/",
+    "license": "MIT",
+    "anonymous": "1",
+    "systemcontroller": "0",
+    "files": [
+        { "vendor": "/ValoaApplication/Controllers/Cart/CartController.php" },
+        { "vendor": "/ValoaApplication/Controllers/Cart/Views/Cart.xsl" }
+    ]
+}
