@@ -2,6 +2,6 @@
 
 namespace Webvaloa\Helpers;
 
-class BabypandaStock
+class Stock
 {
 }

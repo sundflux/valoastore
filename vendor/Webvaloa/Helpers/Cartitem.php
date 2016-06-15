@@ -5,7 +5,7 @@ namespace Webvaloa\Helpers;
 use stdClass;
 use RuntimeException;
 
-class BabypandaCartitem
+class Cartitem
 {
     public $item;
 

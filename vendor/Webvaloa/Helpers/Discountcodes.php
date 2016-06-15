@@ -4,7 +4,7 @@ namespace Webvaloa\Helpers;
 
 use stdClass;
 
-class BabypandaDiscountcodes
+class Discountcodes
 {
     private $db;
     private $code;

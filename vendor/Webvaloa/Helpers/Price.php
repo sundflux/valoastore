@@ -4,7 +4,7 @@ namespace Webvaloa\Helpers;
 
 use stdClass;
 
-class BabypandaPrice
+class Price
 {
     private $price;
     private $isIntegerVat;
@@ -49,7 +49,7 @@ class BabypandaPrice
 
     public function setVat($v)
     {
-        // Little hack for fieldValues from babypanda.fi fields.
+        // Little hack for fieldValues fields.
         // This is always assumed to be in format 'VAT_<amount>'
         $pos = strpos($v, 'VAT_');
         if ($pos !== false) {

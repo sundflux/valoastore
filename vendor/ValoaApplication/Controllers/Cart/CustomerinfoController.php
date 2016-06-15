@@ -4,9 +4,9 @@ namespace ValoaApplication\Controllers\Cart;
 
 use Libvaloa\Debug;
 use Webvaloa\Helpers\PriceFormat;
-use Webvaloa\Helpers\BabypandaCart;
-use Webvaloa\Helpers\BabypandaDiscountcodes as DiscountHelper;
-use Webvaloa\Helpers\BabypandaSmartpost as SmartpostHelper;
+use Webvaloa\Helpers\Cart;
+use Webvaloa\Helpers\Discountcodes as DiscountHelper;
+use Webvaloa\Helpers\Smartpost as SmartpostHelper;
 use Webvaloa\Helpers\Article as ArticleHelper;
 use Webvaloa\Security;
 use Webvaloa\Controller\Request\Response;
@@ -23,7 +23,7 @@ class CustomerinfoController extends \Webvaloa\Application
 
     public function __construct()
     {
-        $this->cart = new BabypandaCart();
+        $this->cart = new Cart();
         $this->view->token = Security::getToken();
 
         $this->ui->setMainTemplate('checkout');

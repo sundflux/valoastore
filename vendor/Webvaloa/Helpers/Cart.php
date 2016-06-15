@@ -6,9 +6,9 @@ use stdClass;
 use UnexpectedValueException;
 use Webvaloa\Article;
 use Webvaloa\Helpers\Article as ArticleHelper;
-use Webvaloa\Helpers\BabypandaPrice as PriceHelper;
+use Webvaloa\Helpers\Price as PriceHelper;
 
-class BabypandaCart
+class Cart
 {
     public $cart;
     private $locale;

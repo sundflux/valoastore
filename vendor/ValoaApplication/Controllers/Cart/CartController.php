@@ -5,8 +5,8 @@ namespace ValoaApplication\Controllers\Cart;
 use stdClass;
 use Webvaloa\Controller\Redirect;
 use Webvaloa\Helpers\PriceFormat;
-use Webvaloa\Helpers\BabypandaCart;
-use Webvaloa\Helpers\BabypandaDiscountcodes as DiscountHelper;
+use Webvaloa\Helpers\Cart;
+use Webvaloa\Helpers\Discountcodes as DiscountHelper;
 use Webvaloa\Helpers\Article as ArticleHelper;
 use Webvaloa\Controller\Request\Response;
 use Webvaloa\Security;
@@ -21,7 +21,7 @@ class CartController extends \Webvaloa\Application
 
     public function __construct()
     {
-        $this->cart = new BabypandaCart();
+        $this->cart = new Cart();
         $this->view->token = Security::getToken();
 
         $this->defaultDeliveryPrice = $this->cart->getDefaultDeliveryPrice();
